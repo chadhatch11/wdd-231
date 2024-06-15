@@ -6,7 +6,6 @@
     <meta name="description" content="Home page for WDD 231 - Web Frontend Development by Chad Hatch">
     <meta name="author" content="Chad Hatch">
     <title>WDD 231 - Web Frontend Development - Chad Hatch</title>
-    <script src="scripts/getdates.js" defer=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Roboto:wght@100;400&amp;display=swap" rel="stylesheet">
@@ -14,23 +13,35 @@
 </head>
 <body>
     <header>
-        <H1 id="myName">Chad Hatch</H1>
-        <nav>
-            <img src="images/profile.jpg" alt="Profile Pic">
-            <a href="index.html">Home</a>
-            <a href="#">Chamber</a>
-            <a href="https://github.com/chadhatch11">GitHub Profile</a>
-            <a href="https://www.linkedin.com/">linkedin</a>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/profile.jpg" alt="Profile Pic">
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li class="nav-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Chamber</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/chadhatch11">GitHub Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/">linkedin</a>
+                    </li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </nav>
+        </div>
     </header>
+    <script src="scripts/scripts.js"></script>
     <main>
         <section class="card">
             <div class="cardheader">
                 <h2>Course Work</h2>
             </div>
             <div id="courseWork">
-                <p id="workDescription"> 
-                    .</p> <p>.</p><p>.</p>
+                <p id="workDescription"> </p>
             </div>
         </section>
         <section class="card">
