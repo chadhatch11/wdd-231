@@ -5,21 +5,21 @@
 }
 
 :root{
-    --primary-color: gray;
-    --secondary-color: white;
-    --accent-color: #000;
-    --background-color: #282626;
+    --primary-color: #043150;
+    --font-color: white;
+    --accent-color: gray;
+    --background-color: #000;
 }
 
 body{
     font-family: "Roboto" sans-serif;
-    background-color: white;
+    background-color: var(--accent-color);
 }
 
 /* HEADER */
 .header{
-    background-color: var(--accent-color);
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .author-info{
@@ -30,8 +30,7 @@ body{
 }
 
 .author-info img{
-    box-shadow: 11px 15px 11px -9px rgba(0,0,0,0.52);
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .author-info h2{
@@ -43,7 +42,7 @@ body{
 	font-size: 40px;
 	border: 0;
 	background: none;
-	color: #ffffff;
+	color: var(--font-color);
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
@@ -71,11 +70,11 @@ body{
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--font-color);
 }
 .navigation a:hover {
 	background-color:var(--primary-color);
-	color: #ffffff;
+	color: var(--font-color);
     font-size: 18px;
     width: 100%;
     text-align: left;
@@ -88,17 +87,18 @@ body{
 
 /* MAIN */
 .section-course{
-    background-color: gray;
+    background-color: var(--accent-color);
     margin: 20px;
     border-radius: 15px;
     padding-bottom: 10px;
+    border: solid #000;
 }
 
 .title-course{
-    background-color: #000;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 100;
     padding: 10px;
     text-align: center;
     border-top-left-radius: 15px;
@@ -120,16 +120,18 @@ body{
 
 /* SECOND SECTION */
 .info-country{
-    background-color: gray;
+    background-color: var(--accent-color);
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    border: solid #000;
 }
 
 .title-country{
-    background-color: #000;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 100;
     padding: 10px;
     text-align: center;
     border-top-left-radius: 15px;
@@ -154,17 +156,18 @@ body{
 
 /* THIRD SECTION */
 .info-courses{
-    background-color: gray;
+    background-color: var(--accent-color);
     margin: 20px;
     border-radius: 15px;
     padding-bottom: 10px;
+    border: solid #000;
 }
 
 .title-certificates{
-    background-color: #000;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 100;
     padding: 10px;
     text-align: center;
     border-top-left-radius: 15px;
@@ -184,11 +187,11 @@ body{
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    background-color: #ccc;
-    border: 1px solid #999;
+    background-color: var(--font-color);
+    border: 1px solid var(--background-color);
 }
 
 .label.small{
@@ -197,13 +200,13 @@ body{
 }
 
 .label.bg-black{
-    background-color: #282626;
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .label.bg-secondary{
-    background-color: #2e2c51;
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 #courses{
@@ -228,15 +231,15 @@ ul{
 
 /* FOOTER */
 .footer{
-    background-color: var(--accent-color);
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: var(--font-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
     margin-top: 60px;
 }
@@ -264,13 +267,14 @@ ul{
 	}
 
     .author-info{
-        justify-content: center;
+        justify-content: flex-start;
+
     }
 
 	.navigation {
 		flex-direction: row;
-        font-size: 18px;
-        background-color: #2e2c51;
+        font-size: 24px;
+        background-color: var(--background-color);
 	}
 
 	.navigation a {
@@ -279,13 +283,13 @@ ul{
 	}
 
     .navigation a:hover {
-        background-color:#2e2c51;
-        color:#afc93b;
+        background-color: var(--accent-color);
+        color: var(--background-color);
         font-size: 18px;
         width: 100%;
         text-align: center;
         font-weight: 700;
-        border-radius: 5px;
+        border-radius: 15px;
     }
 
     .grid{

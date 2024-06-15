@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for WDD 231 - Web Frontend Development by Chad Hatch">
     <meta name="author" content="Chad Hatch">
-    <title>WDD 231 - Web Frontend Development - Chad Hatch</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Roboto:wght@100;400&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/homepage.css">
-    <script src="scripts/scripts.js" defer></script>
-</head>
-<body>
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/homepage.css">
+    <script src="/scripts/scripts.js" defer></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="author-info">
-          <img src="images/profile.jpg" alt="img-profile" width="100" height="150">
-          <h2>Chad Hatch</h2>
+      <div class="author-info">
+        <img src="/images/profile.jpg" alt="img-profile" width="100" height="150">
+        <h2>Chad Hatch</h2>
+      </div>
+      <button id="menu"></button>
+      <nav class="navigation">
+        <a href="/index.html" title="Home">Home</a>
+        <a href="#" title="Chamber" class="active">Chamber</a>
+        <a href="https://github.com/chadhatch11" title="github-profile">GitHub Profile</a>
+        <a href="https://www.linkedin.com/" title="linkedin">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <div class="grid">
+            <section class="section-course">
+                <div class="title-course">
+                    <span>Course Work</span>
+                </div>
+                <div class="list-course">
+                <ul class="list-c">
+                    <li>Week 1</li>
+                    <li>Week 2</li>
+                    <li>Week 3</li>
+                    <li>Week 4</li>
+                    <li>Week 5</li>
+                    <li>Week 6</li>
+                    <li>Week 7</li>
+                </ul>
+                </div>
+              </section>
+              <section class="info-country">
+                <div class="title-country">
+                <span>El Salvador, San Salvador</span>
+                </div>
+                <div class="img-country">
+                  <img src="./images/maquilishuat-tree.webp" alt="img-profile" width="300" height="300">
+                  <p class="title-img-country">Maquilishuat Tree</p>
+                </div>
+              </section>  
         </div>
-        <button id="menu"></button>
-        <nav class="navigation">
-          <a href="index.html" title="Home">Home</a>
-          <a href="#" title="Chamber" class="active">Chamber</a>
-          <a href="https://github.com/chadhatch11" title="github-profile">GitHub Profile</a>
-          <a href="https://www.linkedin.com" title="linkedin">LinkedIn</a>
-          </nav>
-      </header>
-      <main>
-          <div class="grid">
-              <section class="section-course">
-                  <div class="title-course">
-                      <span>Course Work</span>
-                  </div>
-                  <div class="list-course">
-                  <ul class="list-c">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                  </ul>
-                  </div>
-                </section>
-                <section class="info-country">
-                  <div class="title-country">
-                  <span>Amazonas Peru</span>
-                  </div>
-                  <div class="img-country">
-                    <img src="./images/rubber-trees.webp" alt="img-profile" width="300" height="300">
-                    <p class="title-img-country">Rubber Trees</p>
-                  </div>
-                </section>  
-          </div>
-        <section class="info-courses">
-          <div class="title-certificates">
-          <span>Web and Computer Programming Certificate</span>
-          </div>
-          <div class="button-info" id="filters">
-            <button id="filter-all" class="label small bg-black" aria-label="Show all courses">All</button>
-            <button id="filter-cse" class="label small bg-black" aria-label="Show CSE courses">CSE</button>
-            <button id="filter-wdd" class="label small bg-black"  aria-label="Show WDD courses">WDD</button>
-          </div>
-          <div>
-            <ul id="courses">
-            </ul>
-          </div>
-          <p class="credits">Total Credits: <span id="total-credits"></span></p>
-        </section>
-      </main>
-      <footer class="footer">
-        <p>
-            <span id="currentYear">©️2024</span> 🇵🇪 Chad Hatch 🇵🇪 USA
-        </p>
-        <p id="lastModified">Last modified: 06/04/2024 12:09:13</p>
+      <section class="info-courses">
+        <div class="title-certificates">
+        <span>Web and Computer Programming Certificate</span>
+        </div>
+        <div class="button-info" id="filters">
+          <button id="filter-all" class="label small bg-black" aria-label="Show all courses">All</button>
+          <button id="filter-cse" class="label small bg-black" aria-label="Show CSE courses">CSE</button>
+          <button id="filter-wdd" class="label small bg-black"  aria-label="Show WDD courses">WDD</button>
+        </div>
+        <div>
+          <ul id="courses">
+          </ul>
+        </div>
+        <p class="credits">Total Credits: <span id="total-credits"></span></p>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-p-author">
+          <p class="info-author">
+            <span id="currentyear">© 2024</span>
+            <span class="name-author"> 🇵🇪 Chad Hatch 🇵🇪</span>
+            <div class="flag-info">
+              <span>USA</span>
+            </div>
+          </p>
+        </div>
+      <p id="lastModified">Last Update: </p>
     </footer>
-</body>
+  </body>
 </html>
