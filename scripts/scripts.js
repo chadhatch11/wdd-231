@@ -1,35 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = `©️${currentYear}`;
 
-const currentYear = new Date().getFullYear();
+    const lastModifiedDate = document.lastModified;
+    const footerSecondParagraph = document.querySelector('footer p:nth-of-type(2)');
+    footerSecondParagraph.textContent = `Last modified: ${lastModifiedDate}`;
 
-const lastModifiedDate = document.lastModified;
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-const footerSecondParagraph = document.querySelector('footer p:nth-of-type(2)');
-footerSecondParagraph.textContent = `Last modified: ${lastModifiedDate}`;
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
 
-
-
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-const menu_items = document.querySelectorAll('nav .mainMenu li a');
-
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
-
-// close menu when you click on a menu item 
-menu_items.forEach(item => {
-    item.addEventListener('click',function(){
-        close();
-    })
-})
-
-function show(){
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
-}
-function close(){
-    mainMenu.style.top = '-100%';
-}
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }));
+});
 
 
 
