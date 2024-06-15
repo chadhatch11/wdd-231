@@ -10,67 +10,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Roboto:wght@100;400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/homepage.css">
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <img src="images/profile.jpg" alt="Profile Pic">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Chamber</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/chadhatch11" class="nav-link">GitHub Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/" class="nav-link">LinkedIn</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+    <header class="header">
+        <div class="author-info">
+          <img src="images/profile.jpg" alt="img-profile" width="100" height="150">
+          <h2>Chad Hatch</h2>
         </div>
-    </header>
-    <main>
-        <section class="card">
-            <div class="cardheader">
-                <h2>Course Work</h2>
-            </div>
-            <div id="courseWork">
-                <p id="workDescription"> </p>
-            </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+          <a href="index.html" title="Home">Home</a>
+          <a href="#" title="Chamber" class="active">Chamber</a>
+          <a href="https://github.com/chadhatch11" title="github-profile">GitHub Profile</a>
+          <a href="https://www.linkedin.com" title="linkedin">LinkedIn</a>
+          </nav>
+      </header>
+      <main>
+          <div class="grid">
+              <section class="section-course">
+                  <div class="title-course">
+                      <span>Course Work</span>
+                  </div>
+                  <div class="list-course">
+                  <ul class="list-c">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                  </ul>
+                  </div>
+                </section>
+                <section class="info-country">
+                  <div class="title-country">
+                  <span>Amazonas Peru</span>
+                  </div>
+                  <div class="img-country">
+                    <img src="./images/rubber-trees.webp" alt="img-profile" width="300" height="300">
+                    <p class="title-img-country">Rubber Trees</p>
+                  </div>
+                </section>  
+          </div>
+        <section class="info-courses">
+          <div class="title-certificates">
+          <span>Web and Computer Programming Certificate</span>
+          </div>
+          <div class="button-info" id="filters">
+            <button id="filter-all" class="label small bg-black" aria-label="Show all courses">All</button>
+            <button id="filter-cse" class="label small bg-black" aria-label="Show CSE courses">CSE</button>
+            <button id="filter-wdd" class="label small bg-black"  aria-label="Show WDD courses">WDD</button>
+          </div>
+          <div>
+            <ul id="courses">
+            </ul>
+          </div>
+          <p class="credits">Total Credits: <span id="total-credits"></span></p>
         </section>
-        <section class="card">
-            <div class="cardHeader">
-                <h2>Peruvian Amazon</h2>
-            </div>
-            <div id="rubberTrees">
-                <img src="images/rubber-trees.webp" alt="Rubber Trees">
-                <p id="peruTrees">Rubber Trees</p>
-            </div>
-        </section>
-        <section class="card">
-            <div class="cardHeader">
-                <h2>Web and Computer Programming Certificate</h2>
-            </div>
-            <div id="certificates">
-                <p id="myCertificates">cse 110</p>
-            </div>
-        </section>
-    </main>
-    <footer>
+      </main>
+      <footer class="footer">
         <p>
             <span id="currentYear">©️2024</span> 🇵🇪 Chad Hatch 🇵🇪 USA
         </p>
         <p id="lastModified">Last modified: 06/04/2024 12:09:13</p>
     </footer>
-    <script src="scripts/scripts.js"></script>
 </body>
 </html>
